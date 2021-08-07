@@ -1,0 +1,19 @@
+<h2>Final Prediction Score is:</h2>
+{% if output1 %}
+<p> {{ output1 }} % </p>
+{% endif %}
+
+<h2>Total Length of the Video is:</h2>
+{% if output3 %}
+<p> {{ output3 }} seconds</p>
+{% endif %}
+
+<h2>Total Number of Violation Seconds in the Video is:</h2>
+{% if output2 %}
+<p> {{ output2 }} seconds </p>
+{% endif %}
+
+
+<h3>Following States How the Violation Scores are Changing with the Time</h3>
+
+<img src="{{ url }}" alt="Chart" height="500" width="750">
